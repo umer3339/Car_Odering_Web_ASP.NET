@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master2.master.cs" Inherits="Master2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+        <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+   
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="dvtop">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="..\Home2.aspx"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+      <li><a href="#seletion2">Contact</a></li>
+      <li><a href="..\Products.aspx">Products</a></li>
+        <li><a href="..\About.aspx">About</a></li>
+    </ul>
+         
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="..\signUp.aspx"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+      <li><a href="..\login.aspx"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+           <li class="dropdown"><button style="margin:9px 6px 0px 0px;" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> Setting <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="..\Admin\theme.aspx">Theme setting </a></li>
+              <li><a href="#section42">Section </a></li>
+            </ul>
+            </li>
+    </ul>
+           </div>
+  </div>
+</nav>
+      </div>
+        
+        
+   
+       <asp:ContentPlaceHolder  id="ContentPlaceHolder1" runat="server">
+           
+
+         
+        </asp:ContentPlaceHolder>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+        </asp:ContentPlaceHolder>
+        <div id="dvbottom" class="container" >
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="footer-menu">
+                        <h3>Navigation</h3>
+                        <li><a href="..\Home2.aspx">Home</a></li>
+                        <li><a href="..\About.aspx">About</a></li>
+                        <li><a href="..\Products.aspx">Products</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow us on Social Media</h3>   
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="https://accounts.google.com/signin" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                </div>
+                <div class="col-md-4" >
+                    <h3>Select Language</h3>
+                    <div class="select" id ="google_translate_element"></div>
+                </div>
+
+            </div>
+            <div class="col-md-12">
+               <h4>&copy; Rights All Reserved</h4> 
+            </div>
+            
+
+
+        </div>
+    </form>
+</body>
+</html>
+
